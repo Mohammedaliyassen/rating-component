@@ -1,0 +1,95 @@
+*{
+    transition: .5s;
+
+}
+body{
+    background-color: #141519;
+}
+#grand{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    perspective: 1000px;
+}
+#father{
+    width: 25vw;
+    overflow: hidden;
+}
+
+#sub ,#thanks{
+    background-color: #1f2630;
+    color: white;
+    text-align: start;
+    padding: 30px;
+    border-radius: 30px;
+    backface-visibility: hidden;
+}
+
+span{
+    background-color: #262e39;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    box-shadow: 4px 4px #1c1e2463;
+}
+span:hover {
+    background-color: #fc7613;
+    text-align: center;  
+    box-shadow: -4px 4px #1c1e2463;
+}
+span:hover svg path{
+    fill: #fff;
+    transition: .1ms;
+}
+span p {
+    width: 45px;
+    height: 15px;
+}
+#star {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+}
+#star svg {
+    transform: translateY(80%);
+    transition: .1ms;
+}
+button{
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    background-color: #fc7613;
+    color: white;
+    font-size: 21px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+#thanks{
+    transform: translate(26vw,-47vh);
+    text-align: center;
+}
+#thanks p{
+    color: #757c86;
+}
+#rotateMagic{
+    transform: translate(0vw, 20vh);
+}
+#thanks h4{
+    color: #fc7613;
+    background-color: #262f38;
+    padding: 7px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+#thanks h4:hover{
+    color: #fff;
+    background-color: #fc7613;
+}
