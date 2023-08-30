@@ -1,11 +1,13 @@
-*{
+* {
     transition: .5s;
 
 }
-body{
+
+body {
     background-color: #141519;
 }
-#grand{
+
+#grand {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -13,12 +15,13 @@ body{
     height: 95vh;
     perspective: 1000px;
 }
-#father{
-    width:40vw;
+
+#father {
+    width: 50vw;
     overflow: hidden;
 }
 
-#sub ,#thanks{
+#sub, #thanks {
     background-color: #1f2630;
     color: white;
     text-align: start;
@@ -27,7 +30,7 @@ body{
     backface-visibility: hidden;
 }
 
-span{
+span {
     background-color: #262e39;
     display: inline-block;
     margin: 5px;
@@ -37,29 +40,35 @@ span{
     color: #fff;
     box-shadow: 4px 4px #1c1e2463;
 }
+
 span:hover {
     background-color: #fc7613;
-    text-align: center;  
+    text-align: center;
     box-shadow: -4px 4px #1c1e2463;
 }
-span:hover svg path{
+
+span:hover svg path {
     fill: #fff;
     transition: .1ms;
 }
+
 span p {
     width: 45px;
     height: 15px;
 }
+
 #star {
     width: 45px;
     height: 45px;
     margin: 0;
 }
+
 #star svg {
     transform: translateY(80%);
     transition: .1ms;
 }
-button{
+
+button {
     border: none;
     cursor: pointer;
     width: 100%;
@@ -71,17 +80,22 @@ button{
     margin-top: 15px;
 }
 
-#thanks{
-    transform: translate(50vw,-45vh);
+#thanks {
+    transform: translate(50vw, -45vh);
     text-align: center;
 }
-#thanks p{
+
+#thanks p {
     color: #757c86;
 }
-#rotateMagic{
-    transform: translate(0vw, 20vh);
+
+#rotateMagic {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
 }
-#thanks h4{
+
+#thanks h4 {
     color: #fc7613;
     background-color: #262f38;
     padding: 7px;
@@ -89,7 +103,30 @@ button{
     display: inline-block;
     margin-bottom: 0px;
 }
-#thanks h4:hover{
+
+#thanks h4:hover {
     color: #fff;
     background-color: #fc7613;
+}
+
+@media (max-width:860px) {
+    #father {
+        width: 60vw;
+        overflow: hidden;
+    }
+
+    #rotateMagic {
+        width: 100vw;
+        display: flex;
+        /* transform: translate(13px,0); */
+        flex-direction: row;
+    }
+}
+
+@media (max-width:580px) {
+    #father {
+        width: 95vw;
+        overflow: hidden;
+    }
+
 }
