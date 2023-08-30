@@ -14,7 +14,7 @@ body{
     perspective: 1000px;
 }
 #father{
-    width: 25vw;
+    width: 50vw;
     overflow: hidden;
 }
 
@@ -72,7 +72,7 @@ button{
 }
 
 #thanks{
-    transform: translate(26vw,-47vh);
+    transform: translate(50vw,-45vh);
     text-align: center;
 }
 #thanks p{
